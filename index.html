@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rich Text Editor | Arthur Granito</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="options">
+            <button onclick="alterarTexto('undo')">
+                <i class="fa-solid fa-undo"></i>
+            </button>
+
+            <button onclick="alterarTexto('redo')">
+                <i class="fa-solid fa-redo"></i>
+            </button>
+
+            <button onclick="alterarTexto('bold')">
+                <i class="fa-solid fa-bold"></i>
+            </button>
+
+            <button onclick="alterarTexto('italic')">
+                <i class="fa-solid fa-italic"></i>
+            </button>
+
+            <button onclick="alterarTexto('underline')">
+                <i class="fa-solid fa-underline"></i>
+            </button>
+
+            <button onclick="alterarTexto('strikethrough')">
+                <i class="fa-solid fa-strikethrough"></i>
+            </button>
+
+            <button onclick="alterarTexto('superscript')">
+                <i class="fa-solid fa-superscript"></i>
+            </button>
+
+            <button onclick="alterarTexto('subscript')">
+                <i class="fa-solid fa-subscript"></i>
+            </button>
+
+            <button onclick="alterarTexto('insertOrderedList')">
+                <i class="fa-solid fa-list-ol"></i>
+            </button>
+
+            <button onclick="alterarTexto('insertUnorderedList')">
+                <i class="fa-solid fa-list"></i>
+            </button>
+
+            <button onclick="alterarTexto('justifyLeft')">
+                <i class="fa-solid fa-align-left"></i>
+            </button>
+
+            <button onclick="alterarTexto('justifyCenter')">
+                <i class="fa-solid fa-align-center"></i>
+            </button>
+
+            <button onclick="alterarTexto('justifyRight')">
+                <i class="fa-solid fa-align-right"></i>
+            </button>
+
+            <button onclick="alterarTexto('justifyFull')">
+                <i class="fa-solid fa-align-justify"></i>
+            </button>
+
+            <button onclick="alterarTexto('indent')">
+                <i class="fa-solid fa-indent"></i>
+            </button>
+
+            <button onclick="alterarTexto('outdent')">
+                <i class="fa-solid fa-outdent"></i>
+            </button>
+
+            <button onclick="criarLink()">
+                <i class="fa-solid fa-link"></i>
+            </button>
+
+            <button onclick="alterarTexto('unlink')">
+                <i class="fa-solid fa-unlink"></i>
+            </button>
+
+            <div class="select">
+                <select id="fontName">
+        
+                </select>
+            </div>
+
+            <div class="select">
+                <select id="fontSize">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3" selected>3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                </select>
+            </div>
+
+            <div class="input-wrapper">
+                <label for="foreColor">Cor</label>
+                <input type="color" id="foreColor">
+            </div>
+
+            <div class="input-wrapper">
+                <label for="highlightColor">Fundo</label>
+                <input type="color" id="highlightColor">
+            </div>
+        </div>
+
+        <div class="text-area" id="content" contenteditable="true">
+
+        </div>
+    </div>
+
+    <script src="JS/script.js"></script>
+</body>
+
+</html>

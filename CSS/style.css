@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgb(103, 204, 103);
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    max-width: 90%;
+}
+
+.options {
+font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.options button {
+    padding: 4px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: transparent;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    transition: all ease 0.3s;
+}
+
+.options button:hover {
+    background-color: #ddd;
+}
+
+.options select {
+    height: 28px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+}
+
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px;
+    height: 28px;
+}
+
+input[type="color"] {
+    appearance: none;
+    -webkit-appearance: none;
+    border: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    padding: 0;
+    cursor: pointer;
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+    padding: 0;
+    border-radius: 50%;
+}
+
+input[type="color"]::-webkit-color-swatch {
+    border: none;
+    border-radius: 50%;
+}
+
+.text-area {
+    width: 100%;
+    border: 2px solid #ddd;
+    margin-top: 15px;
+    border-radius: 5px;
+    height: 50vh;
+    padding: 10px;
+    outline: none;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+li{
+    margin-left: 20px;
+}
+
+select{
+    font-size: 0.9rem;
+    font-family: 'Poppins', sans-serif;
+}
