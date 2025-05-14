@@ -1,7 +1,7 @@
 const selectFontName = document.getElementById('fontName');
 const selectFontSize = document.getElementById('fontSize');
 const foreColor = document.getElementById('foreColor');
-const highlighColor = document.getElementById('highlightColor');
+const highlightColor = document.getElementById('highlightColor');
 const content = document.getElementById('content');
 
 const fonts = [
@@ -19,40 +19,40 @@ fonts.forEach(font => {
     selectFontName.appendChild(option);
 })
 
-const alterarTexto = (comando, value) => {
-    document.execCommand(comando, false, value);
+const alterText = (command, value) => {
+    document.execCommand(command, false, value);
 }
 
-const criarLink = () => {
-    const url = prompt('Digite seu link aqui: \n Ex: https://...');
-    alterarTexto('createLink', url);
+const createLink = () => {
+    const url = prompt('Enter your link here: \n Ex: https://...');
+    alterText('createLink', url);
 }
 
 content.addEventListener('mouseenter', () => {
-    const a = content.querySelectorAll('a');
-    a.forEach(item => {
+    const links = content.querySelectorAll('a');
+    links.forEach(item => {
         item.addEventListener('mouseenter', () => {
             content.setAttribute('contenteditable', false);
             item.target = '_blank';
         })
-        item.addEventListener('mouseleave', () =>{
+        item.addEventListener('mouseleave', () => {
             content.setAttribute('contenteditable', true);
         })
     });
 })
 
 selectFontName.addEventListener('change', () => {
-    alterarTexto('fontName', selectFontName.value);
+    alterText('fontName', selectFontName.value);
 })
 
 selectFontSize.addEventListener('change', () => {
-    alterarTexto('fontSize', selectFontSize.value);
+    alterText('fontSize', selectFontSize.value);
 })
 
 foreColor.addEventListener("change", () => {
-    alterarTexto('foreColor', foreColor.value)
+    alterText('foreColor', foreColor.value)
 })
 
-highlighColor.addEventListener('change', () => {
-    alterarTexto('backColor', highlighColor.value);
+highlightColor.addEventListener('change', () => {
+    alterText('backColor', highlightColor.value);
 })

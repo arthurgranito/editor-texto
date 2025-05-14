@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -17,81 +17,81 @@
 <body>
     <div class="container">
         <div class="options">
-            <button onclick="alterarTexto('undo')">
+            <button onclick="alterText('undo')">
                 <i class="fa-solid fa-undo"></i>
             </button>
 
-            <button onclick="alterarTexto('redo')">
+            <button onclick="alterText('redo')">
                 <i class="fa-solid fa-redo"></i>
             </button>
 
-            <button onclick="alterarTexto('bold')">
+            <button onclick="alterText('bold')">
                 <i class="fa-solid fa-bold"></i>
             </button>
 
-            <button onclick="alterarTexto('italic')">
+            <button onclick="alterText('italic')">
                 <i class="fa-solid fa-italic"></i>
             </button>
 
-            <button onclick="alterarTexto('underline')">
+            <button onclick="alterText('underline')">
                 <i class="fa-solid fa-underline"></i>
             </button>
 
-            <button onclick="alterarTexto('strikethrough')">
+            <button onclick="alterText('strikethrough')">
                 <i class="fa-solid fa-strikethrough"></i>
             </button>
 
-            <button onclick="alterarTexto('superscript')">
+            <button onclick="alterText('superscript')">
                 <i class="fa-solid fa-superscript"></i>
             </button>
 
-            <button onclick="alterarTexto('subscript')">
+            <button onclick="alterText('subscript')">
                 <i class="fa-solid fa-subscript"></i>
             </button>
 
-            <button onclick="alterarTexto('insertOrderedList')">
+            <button onclick="alterText('insertOrderedList')">
                 <i class="fa-solid fa-list-ol"></i>
             </button>
 
-            <button onclick="alterarTexto('insertUnorderedList')">
+            <button onclick="alterText('insertUnorderedList')">
                 <i class="fa-solid fa-list"></i>
             </button>
 
-            <button onclick="alterarTexto('justifyLeft')">
+            <button onclick="alterText('justifyLeft')">
                 <i class="fa-solid fa-align-left"></i>
             </button>
 
-            <button onclick="alterarTexto('justifyCenter')">
+            <button onclick="alterText('justifyCenter')">
                 <i class="fa-solid fa-align-center"></i>
             </button>
 
-            <button onclick="alterarTexto('justifyRight')">
+            <button onclick="alterText('justifyRight')">
                 <i class="fa-solid fa-align-right"></i>
             </button>
 
-            <button onclick="alterarTexto('justifyFull')">
+            <button onclick="alterText('justifyFull')">
                 <i class="fa-solid fa-align-justify"></i>
             </button>
 
-            <button onclick="alterarTexto('indent')">
+            <button onclick="alterText('indent')">
                 <i class="fa-solid fa-indent"></i>
             </button>
 
-            <button onclick="alterarTexto('outdent')">
+            <button onclick="alterText('outdent')">
                 <i class="fa-solid fa-outdent"></i>
             </button>
 
-            <button onclick="criarLink()">
+            <button onclick="createLink()">
                 <i class="fa-solid fa-link"></i>
             </button>
 
-            <button onclick="alterarTexto('unlink')">
+            <button onclick="alterText('unlink')">
                 <i class="fa-solid fa-unlink"></i>
             </button>
 
             <div class="select">
                 <select id="fontName">
-        
+
                 </select>
             </div>
 
@@ -108,12 +108,12 @@
             </div>
 
             <div class="input-wrapper">
-                <label for="foreColor">Cor</label>
+                <label for="foreColor">Color</label>
                 <input type="color" id="foreColor">
             </div>
 
             <div class="input-wrapper">
-                <label for="highlightColor">Fundo</label>
+                <label for="highlightColor">Background</label>
                 <input type="color" id="highlightColor">
             </div>
         </div>
